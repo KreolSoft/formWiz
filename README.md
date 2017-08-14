@@ -46,8 +46,16 @@ And as the final step initiate the form wizard:
 			$form.enabled = true;				// Enable the form submission, if something needs to be corrected in the form for resubmission
 		}
 	};
+	
+	$form.login = 'An other User';					// You can also chage the fields from the script, the watcher will be notifieds and run
 	</script>
 
+
+## To be done
+
+- implement radio boxes
+- implement select
+- chain watchers
 
 ## Authors
 
