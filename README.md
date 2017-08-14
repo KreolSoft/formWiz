@@ -5,7 +5,7 @@ A simple jQuery form observer and watcher
 
 Put a script tag into the head of your website to load formWiz:
 
-	<script src="<?=ROOT_URL;?>/js/formWiz.js" type="text/javascript"></script>
+	<script src="./dist/js/formWiz.js" type="text/javascript"></script>
 	
 Insert the data-binding tags into your form:
 
@@ -23,7 +23,7 @@ Insert the data-binding tags into your form:
 			</label>
 		</div>
 		<div class="p-wrap submitrow">
-			<div class="spinner"><i class="fa fa-pulse fa-spinner-third"></i></div><button name="submit" class="ui-button">Submit</button>
+			<button name="submit" class="ui-button">Submit</button>
 		</div>
 	</form>
 
@@ -33,7 +33,7 @@ And as the final step initiate the form wizard:
 	<script>
 	var $form = new formWiz('#form');				// Select the form with standard jQuery selectors
 	
-	$form.watch('login', function($value, $element) {
+	$form.watch('login', function($value, $element) {		// Watch a form field, runs from the keyup- and change-event, you can only define one callback function for now
 		console.log($value, $element);
 		// Execute some custom code if the value changes
 	});
