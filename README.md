@@ -1,6 +1,7 @@
 # formWiz
 A simple jQuery form observer and watcher
 
+
 ## Getting Started
 
 Put a script tag into the head of your website to load formWiz:
@@ -38,11 +39,11 @@ And as the final step initiate the form wizard:
 		// Execute some custom code if the value changes
 	});
 	
-	$form.submit = function() {							// Add a submit function (is run from the submit-event of the form)
-		$form.enabled = false;								// Disable form submition (disables the submit-event of the form)
+	$form.submit = function() {					// Add a submit function (is run from the submit-event of the form)
+		$form.enabled = false;					// Disable form submition (disables the submit-event of the form)
 		// Some exciting code snippets for AJAX or what not
 		if(your_defined_error) {
-			$form.enabled = true;								// Enable the form submission, if something needs to be corrected in the form for resubmission
+			$form.enabled = true;				// Enable the form submission, if something needs to be corrected in the form for resubmission
 		}
 	};
 	</script>
@@ -52,9 +53,11 @@ And as the final step initiate the form wizard:
 
 * **Nikita Nitichevski** - *Initial work* - [donnikitos](http://donnikitos.com)
 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 
 ## Acknowledgments
 
