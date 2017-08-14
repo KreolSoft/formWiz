@@ -8,7 +8,7 @@ Put a script tag into the head of your website to load formWiz:
 
 	<script src="./dist/js/formWiz.js" type="text/javascript"></script>
 	
-Insert the data-binding tags into your form:
+Insert the **data-formwiz-input** tags into your form to activate data-binding:
 
 	<form id="form">
 		<div class="p-wrap">
@@ -20,7 +20,7 @@ Insert the data-binding tags into your form:
 		<div class="p-wrap">
 			<label class="ui-input-group">
 				<div class="ui-input-label ui-input-label-clickable">Password</div>
-				<input type="password" name="pw" class="ui-input" **data-formwiz-input** />
+				<input type="password" name="pw" class="ui-input" data-formwiz-input />
 			</label>
 		</div>
 		<div class="p-wrap submitrow">
