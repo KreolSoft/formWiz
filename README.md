@@ -55,6 +55,8 @@ And as the final step initiate the form wizard:
 
 - implement radio boxes
 - implement select
+- watch future elements
+- add simple data bindings
 - chain watchers
 
 ## Authors
